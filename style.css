@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(-100deg,#D1A2E6 50%,#9B4EB4 50%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 580px;
+    transition: all 0.5s;
+}
+/* .body:hover{
+    perspective: 1500px;
+} */
+.container{
+    height: 300px;
+    width: 300px;
+    /* perspective: 1000px; */
+    position: relative;
+    transition: all 10s;
+    transform: rotateZ(0) rotateX(0) rotateY(0) ;
+    transform-style: preserve-3d;
+    /* top: 150px; */
+}
+.container:hover{
+    transform:rotateZ(0deg) rotateX(90deg) rotateY(310deg) ;
+}
+.cube{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:0 ;
+    bottom: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(238, 35, 245);
+    /* border-radius: 30%; */
+    cursor: pointer;
+    
+}
+.cube1{
+    background-image:url(./assest/images/img1.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center left;
+    transform: rotateY(90deg) translateX(-150px);
+    border: 5px solid blue;
+}
+.cube2{
+    background-image:url(./assest/images/img2.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center right;
+    transform: rotateY(90deg) translateX(150px);
+    border: 5px solid blue;
+}
+.cube3{
+    background-image:url(./assest/images/img3.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center top;
+    transform: rotateX(-90deg) translateY(-150px);
+}
+.cube4{
+    background-image:url(./assest/images/img4.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center bottom;
+    transform: rotateX(90deg) translateY(150px);
+    border: 5px solid blue;
+}
+.cube5{
+    background-image:url(./assest/images/img5.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center bottom;
+    transform: translateZ(-150px);
+    
+}
+.cube6{
+    background-image:url(./assest/images/img6.jpeg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center bottom;
+    transform: translateZ(150px);
+    border: 5px solid rgb(217, 79, 252);
+}
+
+
+
+
